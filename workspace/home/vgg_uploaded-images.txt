@@ -1,0 +1,187 @@
+Argument 1: uploaded_images/
+Argument 2: vgg
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+ 1 file:         Coffee_mug_01.jpg
+ 2 file:                Cat_01.jpg
+ 3 file:                Dog_02.jpg
+ 4 file:                Dog_01.jpg
+
+Number of items in File - n items= 4
+Pet image =  Coffee_mug_01.jpg
+Pet image =  Cat_01.jpg
+Pet image =  Dog_02.jpg
+Pet image =  Dog_01.jpg
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 2 key:                     Cat_01.jpg  label:                        cat
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+Path =  uploaded_images/Coffee_mug_01.jpg
+Path =  uploaded_images/Cat_01.jpg
+Path =  uploaded_images/Dog_02.jpg
+Path =  uploaded_images/Dog_01.jpg
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                            cup
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+Entering results_dic in adjust_results4_isadog file....
+
+
+Key:Coffee_mug_01.jpg, Value:['coffee mug', 'cup', 0]
+
+
+Key:Cat_01.jpg, Value:['cat', 'tabby, tabby cat, cat', 1]
+
+
+Key:Dog_02.jpg, Value:['dog', 'golden retriever', 0]
+
+
+Key:Dog_01.jpg, Value:['dog', 'golden retriever', 0]
+Coffee_mug_01.jpg coffee mug cup 0 0
+Cat_01.jpg cat tabby, tabby cat, cat 1 0
+Dog_02.jpg dog golden retriever 0 1
+Dog_01.jpg dog golden retriever 0 1
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                            cup  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+number of dog images =: 1
+number of dog images =: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 150.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+Printing key: pct_correct_dogs and value 150.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+Printing key: pct_correct_notdogs and value 100.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+Printing key: pct_correct_breed and value 0.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog Classifier:               golden retriever
+Real:                        dog Classifier:               golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+** Total Elapsed Runtime: 0:0:8

@@ -1,0 +1,85 @@
+Argument 1: uploaded_images/
+Argument 2: resnet
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+ 1 file:                 dog01.jpg
+ 2 file:          coffee_mug01.jpg
+ 3 file:                 dog02.jpg
+ 4 file:                 cat01.jpg
+
+Number of items in File - n items= 4
+Pet image =  dog01.jpg
+Pet image =  coffee_mug01.jpg
+Pet image =  dog02.jpg
+Pet image =  cat01.jpg
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                      dog01.jpg  label:                           
+ 2 key:               coffee_mug01.jpg  label:                     coffee
+ 3 key:                      dog02.jpg  label:                           
+ 4 key:                      cat01.jpg  label:                           
+Path =  uploaded_images/dog01.jpg
+Path =  uploaded_images/coffee_mug01.jpg
+Path =  uploaded_images/dog02.jpg
+Path =  uploaded_images/cat01.jpg
+
+     MATCH:
+
+                     dog01.jpg: 
+Real:                              Classifier:               golden retriever
+
+              coffee_mug01.jpg: 
+Real:                     coffee   Classifier:                     coffee mug
+
+                     dog02.jpg: 
+Real:                              Classifier:               golden retriever
+
+                     cat01.jpg: 
+Real:                              Classifier:                 tiger cat, cat
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+Entering results_dic in adjust_results4_isadog file....
+
+
+Key:dog01.jpg, Value:['', 'golden retriever', 1]
+
+
+Key:coffee_mug01.jpg, Value:['coffee', 'coffee mug', 1]
+
+
+Key:dog02.jpg, Value:['', 'golden retriever', 1]
+
+
+Key:cat01.jpg, Value:['', 'tiger cat, cat', 1]
+dog01.jpg  golden retriever 1 0
+coffee_mug01.jpg coffee coffee mug 1 0
+dog02.jpg  golden retriever 1 0
+cat01.jpg  tiger cat, cat 1 0
+
+     MATCH:
+
+                     dog01.jpg: 
+Real:                              Classifier:               golden retriever  
+PetLabelDog: 0  ClassLabelDog: 1
+
+              coffee_mug01.jpg: 
+Real:                     coffee   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                     dog02.jpg: 
+Real:                              Classifier:               golden retriever  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                     cat01.jpg: 
+Real:                              Classifier:                 tiger cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
